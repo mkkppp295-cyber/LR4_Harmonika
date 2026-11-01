@@ -84,8 +84,15 @@ h3 { font-size: 20px; font-weight: 680; }
   transition: background .2s, border-color .2s, transform .2s, box-shadow .2s;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn-primary { background: var(--purple); color: white; box-shadow: 0 5px 28px rgba(139,92,246,.2); }
-.btn-primary:hover { background: #9b70ff; box-shadow: 0 8px 34px rgba(139,92,246,.34); }
+.btn-primary {
+  background: linear-gradient(100deg,#8b5cf6 0%,#7c6cf0 45%,#2dd4bf 115%);
+  color: white;
+  box-shadow: 0 5px 28px rgba(139,92,246,.28), 0 3px 16px rgba(45,212,191,.14);
+}
+.btn-primary:hover {
+  background: linear-gradient(100deg,#9b70ff 0%,#8a7cf4 45%,#45dcc6 115%);
+  box-shadow: 0 8px 34px rgba(139,92,246,.4), 0 5px 20px rgba(45,212,191,.22);
+}
 .btn-secondary { background: rgba(255,255,255,.035); border-color: var(--border); }
 .btn-secondary:hover { border-color: var(--border-hover); background: rgba(255,255,255,.06); }
 .btn svg { width: 16px; height: 16px; flex: 0 0 auto; }
